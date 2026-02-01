@@ -1,0 +1,80 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fondo con imagen opcional */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("img/fondo\ escolar.jpeg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* título */
+.container h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* mensaje */
+.mensaje {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+input {
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6a5acd;
+}
+
+button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #6a5acd;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a4abc;
+}
+
+/* mensaje final :) */
+#resultado {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
